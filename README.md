@@ -10,20 +10,27 @@ Merhaba! Ben Ebrar Keleş. Aşağıda geliştirdiğim bazı mobil uygulamalara a
 
 - **Platform:** Android (Flutter)  
 - **Teknolojiler:** Bluetooth, Firebase, Flutter, Firestore  
-- **Roller:** Cihazla bağlantı, rulo hak yönetimi, kullanıcı bazlı arayüz geliştirme (yönetici / personel)  
+- **Roller:**  
+  - Cihazla bağlantı ve rulo hak yönetimi  
+  - Kart üzerinden cihaz parametrelerinin ayarlanması  
+  - Kullanıcı rolleri doğrultusunda arayüz çeşitlendirmesi (yönetici / personel)
+  - Yazılım güncellemelerinin Bluetooth üzerinden uygulanması 
+
 - **Özellikler:**  
   - Konum ve bluetooth bağlantısı ile cihaz eşleştirme  
   - Rulo yükleme, tüketim takibi ve gönderme  
   - Yetkilendirilmiş kullanıcı rolleriyle arayüz özelleştirme  
-  - Firebase Auth ile güvenli giriş sistemi  
-  - Kamera ve konum izinleri ile erişim denetimi  
-  - Firestore üzerinde veri saklama ve erişim kontrolü  
-- **Güvenlik:**  
-  - Hassas veri akışlarında kullanıcı doğrulaması  
-  - Role-based erişim yönetimi (RBAC)  
-  - Şifreli bağlantılar ve güvenli oturumlar  
-- **Yayın:** Kurum içi kullanımda, kontrollü erişimle dağıtım
+  - Firmware (yazılım) güncellemelerinin Bluetooth üzerinden uygulanması  
+  - Firebase Auth ile güvenli oturum yönetimi  
+  - Konum, kamera ve bağlantı izinlerinin denetimi  
 
+- **Güvenlik:**  
+  - Kullanıcı rolleriyle sınırlandırılmış erişim (RBAC)  
+  - Şifreli bağlantı üzerinden cihaz kontrolü  
+  - Firestore üzerinden erişim denetimi ve veri bütünlüğü  
+
+- **Yayın Durumu:** Uygulama App Store'da herkese açık şekilde yayınlandı  
+- **Erişim:** Sadece yetkili kullanıcıların giriş yaparak kullanabildiği, kimlik doğrulama gerektiren bir sistem
 ---
 
 ## 🚚 CARPEX Cihaz Sevk – Stok ve Sevk Takip Uygulaması
@@ -42,6 +49,31 @@ Merhaba! Ben Ebrar Keleş. Aşağıda geliştirdiğim bazı mobil uygulamalara a
 
 ---
 
+## 🌸 CARPE X Koku – Akıllı Koku Cihazı Yönetim Uygulaması
+
+**Amaç:** Carpex marka koku cihazlarının kart seviyesinde uzaktan yönetimini, programlanmasını ve yazılım güncellemelerini sağlamak amacıyla geliştirilmiş mobil uygulama.
+
+- **Platform:** Android (Flutter)  
+- **Teknolojiler:** Flutter, Firebase, Bluetooth, Firestore  
+- **Roller:**  
+  - Cihaz kartına Bluetooth ile bağlantı kurma  
+  - Program saatlerini ve günlerini ayarlama  
+  - Yazılım güncellemelerini cihaza uzaktan uygulama  
+  - Pil durumu ve cihaz çalışma bilgilerini izleme  
+
+- **Özellikler:**  
+  - Koku verme programlarını gün/saat bazlı oluşturma  
+  - Aktif/pasif mod geçişleri  
+  - Kart üzerinde firmware güncelleme yeteneği  
+  - Kullanıcıya özel erişim (Firebase Auth ile)  
+  - Güvenli bağlantı, izin yönetimi ve hata geri bildirimleri  
+
+- **Yayın Durumu:** App Store’da herkese açık şekilde yayında  
+- **Erişim:** Yalnızca yetkilendirilmiş kullanıcıların giriş yaparak kullanabildiği yapı
+- **Not:** Proje devredilerek geliştirmeye devam edilmiştir
+
+---
+
 ## 🔁 Gesk Track – Görev Takip Uygulaması
 
 **Amaç:** Ekip içi görevlerin atanmasını, takibini ve ilerleme raporlamasını sağlayan mobil uygulama.
@@ -50,5 +82,3 @@ Merhaba! Ben Ebrar Keleş. Aşağıda geliştirdiğim bazı mobil uygulamalara a
 - **Teknolojiler:** Flutter, Firebase, Cloud Firestore  
 - **Özellikler:** Gerçek zamanlı görev güncellemeleri, bildirim sistemi, kullanıcı bazlı görev listeleri  
 - **Durum:** Teknopark bünyesinde geliştirildi, şirket içi aktif kullanımda
-
----
